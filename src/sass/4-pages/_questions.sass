@@ -1,0 +1,18 @@
+@use '../1-base/variables'
+@use '../1-base/mixins'
+
+.section-container
+    @include mixins.center($display: grid)
+    width: 100%
+
+    @media(max-width: 28.43rem)
+        padding: 20px
+    @media( max-width: 570px )
+        padding: 10px
+
+    &-card
+        background-color: variables.$bg-card
+        @include mixins.card($width: 514px, $height: 50%, $border-radius: 20px, $padding: 23px)
+        text-align: center
+        @include mixins.center($display: grid)
+

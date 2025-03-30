@@ -1,0 +1,34 @@
+@use '../1-base/mixins';
+@use '../1-base/variables';
+
+button 
+    width: 100%;
+    max-height: 45px;
+    border-radius: 3px;
+    padding: 10.5px;
+    cursor: pointer;
+    font-family: variables.$font;
+    font-size: calc(variables.$fontSZ - 10px);
+    @include mixins.center($display: flex);
+
+    @media (max-width: 322px) 
+        font-size: max(12px, calc(variables.$fontSZ - 18px));
+    
+
+.div-container-button 
+    @include mixins.center($display: flex);
+
+.div-container-buttons
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 23px
+
+.div-container-button-proximo 
+    button 
+        @include mixins.center($display: flex);
+
+.button-feedback
+     width: 341px 
+
+    
+
