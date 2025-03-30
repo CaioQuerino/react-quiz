@@ -42,7 +42,10 @@ p {
 }
 
 body {
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   height: 100vh;
 }
 

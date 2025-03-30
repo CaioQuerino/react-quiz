@@ -1,8 +1,0 @@
-@use '../1-base/variables'
-@use '../1-base/mixins'
-    
-@mixin card-container($width: 514px, $height: auto, $border-radius: 20px, $padding: 23px)
-    background-color: variables.$bg-card
-    @include mixins.card($width: $width, $height: $height, $border-radius: $border-radius, $padding: $padding)
-    text-align: center
-    @include mixins.center($display: grid)
