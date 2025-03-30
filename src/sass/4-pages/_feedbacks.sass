@@ -9,21 +9,21 @@
 .div-container-feedback 
     @include mixins.center($display: grid)
     height: 100vh
-    width: 100%
+    justify-content: center
+
 
     @media (max-width: 28.43rem) 
         padding: 20px
     
-    @media (max-width: 570px) 
-        padding: 10px
+    @media (max-width: 24.68rem) 
     
 
     &-card 
         background-color: variables.$bg-card
-        @include mixins.card($width: 514px, $height: auto, $border-radius: 20px, $padding: 23px)
+        @include mixins.card($width: 514px, $height: auto, $border-radius: 20px, $padding: 11px, $margin: 11px)
         text-align: center
         @include mixins.center($display: grid)
-    
+
 
 
 // Mantém os textos visíveis e sem transparência
